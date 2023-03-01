@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 16;
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("px_by_Gre3g.webp");
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #202020;
+    transition: cubic-bezier(.04,1.09,.43,.85) 0.3s;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    padding: 10px 10%;
+}
+
+.links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.links li a {
+    background-image: linear-gradient(
+        to right,
+        #54b3d6,
+        #54b3d6 50%,
+        #fff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.links li a:before {
+    content: '';
+    background: #54b3d6;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.links li a:hover {
+    background-position: 0;
+    cursor: pointer;
+}
+
+.links li a:hover::before {
+    width: 100%;
+  }
+
+button {
+    padding: 10px 30px;
+    background-color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #292929
+}
+
+.section_title_about {
+    font-size: 50px;
+}
+
+.about {
+    margin: auto;
+    width: 50%;
+}
+
+.picture {
+    width: 100%;
+    border-radius:50%;
+    border: 10px solid black;
+    overflow: hidden;
+}
+
+.about_paragraph{
+    padding: 10px
+}
+
+
+.tech_skills_list {
+    margin: 0 auto;
+    max-width: 1000px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    justify-content: center;
+    transition: 0.3s;
+    padding: 15px;
+}
+
+.icon:hover{
+    transform: scale(1.25);
+}
+
+h2{
+    font-size: 30px;
+}
+
+.about_paragraph{
+    font-size: 20px;
+}
+
+.projects_list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.project {
+    max-width: 600px;
+    transition: 0.3s ease 0s;
+    margin: 50px;
+    border-radius: 10px;
+    border: 3px solid #292929;
+}
+
+.project:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px black;
+}
+
+.project_description {
+    display: flex;
+    display: inline-block;
+}
+
+.project_image {
+    max-width: 600px;
+    width: 50vw;
+    background-color: #fff;
+    border-radius: 10px;
+}

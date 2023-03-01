@@ -108,6 +108,7 @@ button:hover{
     border-radius:50%;
     border: 10px solid black;
     max-width: 500px;
+    box-shadow: 3px 3px 10px black;
 }
 
 .about_paragraph{
@@ -122,6 +123,9 @@ button:hover{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
 }
 
 .icon {
